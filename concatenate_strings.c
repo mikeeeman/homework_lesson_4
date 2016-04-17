@@ -19,7 +19,7 @@ int main( void )
 	for (n = 97, cnt = 2 ; n < 123 ; n++, cnt++)
 	{
 		str2[0] = n;
-		str1 = (char *) realloc(str1, cnt);
+		str1 = (char *)realloc(str1, cnt);
 
 		str1[cnt-1] = '\0';
 		strcat(str1, str2);
