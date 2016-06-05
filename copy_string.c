@@ -18,7 +18,7 @@ int main(void)
 
 	fprintf(stdout, "The source string is: %s", source);
 	puts("");
-	dest1 = (char*)malloc(sizeof(strlen(source)));
+	dest1 = (char*)malloc(strlen(source));
 	strcpy(dest1, source);
 	fprintf(stdout, "The destination string is: %s", dest1);
 	puts("");
@@ -27,8 +27,8 @@ int main(void)
 	fgets(input, SIZE, stdin);
 	fflush(stdin);
 	strtok(input, "n");
-	fprintf(stdout, "The input string is: %s", input);
-	dest2 = (char*)malloc(sizeof(strlen(input)));
+	fprintf(stdout, "The input string is: %s\n", input);
+	dest2 = (char*)malloc(strlen(input));
 	strcpy(dest2, input);
 	fprintf(stdout, "The destination input string is: %s", dest2);
 

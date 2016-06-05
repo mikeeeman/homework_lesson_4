@@ -40,9 +40,9 @@ int main(void)
 	{
 		for(cnt = 0; cnt < strlen(string[cnt2]) ; cnt++)
 		{
-			if(string[cnt2][cnt] >= 65 && string[cnt2][cnt] <= 90)
+			if(string[cnt2][cnt] >= 'A' && string[cnt2][cnt] <= 'Z')
 			{
-				string[cnt2][cnt] = string[cnt2][cnt] + 32;
+				string[cnt2][cnt] = string[cnt2][cnt] + ('a'-'A');
 			}
 		}
 	}

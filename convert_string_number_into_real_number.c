@@ -20,7 +20,6 @@ int main(void)
 	char *lNbr;
 	char *tmp;
 	char *sign;
-	int isign;
 
 	fprintf(stdout, "Type an equation (addition and subtraction only!):\n");
 	fgets(input, STRSIZE, stdin);
